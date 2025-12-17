@@ -1,16 +1,16 @@
 :root {
-    --bg-page: #050608;
-    --bg-elevated: #15141B;
-    --bg-soft: #1F1E26;
-    --accent: #ffffff;
-    --accent-soft: #085e00;
-    --text-main: #F5F5F7;
-    --text-muted: #9B9BA5;
-    --border-subtle: #262632;
+    --bg-page: #040814;
+    --bg-elevated: #0c1324;
+    --bg-soft: #141d2e;
+    --accent: #9ec8ff;
+    --accent-soft: #1f3b63;
+    --text-main: #e9f0ff;
+    --text-muted: #9aaecd;
+    --border-subtle: #1f2a40;
     --radius-lg: 18px;
     --radius-md: 12px;
     --radius-pill: 999px;
-    --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.65);
+    --shadow-soft: 0 18px 45px rgba(3, 7, 18, 0.75);
 }
 
 *,
@@ -22,7 +22,7 @@
 body.page {
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(circle at top left, #161420 0, #050608 45%);
+    background: radial-gradient(circle at 18% 18%, #162447 0, #0b1630 40%, #030714 78%);
     color: var(--text-main);
     font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -43,7 +43,7 @@ body.page {
 }
 
 .section--inverse {
-    background: linear-gradient(135deg, #15141B, #050608);
+    background: linear-gradient(135deg, #0f1a33, #050918);
 }
 
 .section__header {
@@ -82,8 +82,8 @@ body.page {
     z-index: 20;
     backdrop-filter: blur(18px);
     background: linear-gradient(to bottom,
-        rgba(5, 6, 8, 0.92),
-        rgba(5, 6, 8, 0.78),
+        rgba(4, 8, 20, 0.92),
+        rgba(4, 8, 20, 0.78),
         transparent);
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
@@ -112,8 +112,8 @@ body.page {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: radial-gradient(circle at 20% 0, #046b00, #0e8b03 55%, #003b00 100%);
-    color: #181510;
+    background: radial-gradient(circle at 25% 5%, #295aa3, #174077 55%, #0a1e3c 100%);
+    color: #e9f0ff;
     font-weight: 700;
     font-size: 14px;
 }
@@ -193,7 +193,7 @@ body.page {
 }
 
 .btn--primary {
-    background: radial-gradient(circle at 20% 0, #2a7400, #00660e 60%, #085700 100%);
+    background: radial-gradient(circle at 20% 0, #2d5da3, #1f467c 60%, #0f2f59 100%);
     color: #ffffff;
     box-shadow: var(--shadow-soft);
 }
@@ -204,31 +204,31 @@ body.page {
 }
 
 .btn--secondary {
-    background: #23222D;
+    background: #141d2e;
     color: var(--text-main);
-    border: 1px solid #343341;
+    border: 1px solid #233253;
 }
 
 .btn--secondary:hover {
-    background: #2B2A37;
+    background: #1a2540;
 }
 
 .btn--ghost {
     background: transparent;
     color: var(--accent);
-    border: 1px solid rgba(107, 242, 147, 0.4);
+    border: 1px solid rgba(158, 200, 255, 0.45);
 }
 
 .btn--ghost:hover {
-    background: rgba(118, 242, 107, 0.08);
+    background: rgba(158, 200, 255, 0.08);
 }
 
 .btn-icon {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 1px solid #343341;
-    background: #1B1A23;
+    border: 1px solid #233253;
+    background: #0f1728;
     color: var(--text-muted);
     display: inline-flex;
     align-items: center;
@@ -256,8 +256,8 @@ body.page {
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 0 0, rgba(4, 104, 17, 0.342), transparent 55%),
-                linear-gradient(to bottom, rgba(5, 6, 8, 0.9), rgba(5, 6, 8, 1));
+    background: radial-gradient(circle at 12% 10%, rgba(41, 90, 163, 0.45), transparent 55%),
+                linear-gradient(to bottom, rgba(4, 8, 20, 0.92), rgba(3, 6, 18, 1));
 }
 
 .hero__content {
@@ -295,8 +295,8 @@ body.page {
     margin-bottom: 28px;
     padding: 8px;
     border-radius: var(--radius-pill);
-    background: rgba(16, 15, 23, 0.9);
-    border: 1px solid rgba(107, 242, 136, 0.2);
+    background: rgba(8, 13, 24, 0.9);
+    border: 1px solid rgba(158, 200, 255, 0.28);
     box-shadow: var(--shadow-soft);
 }
 
@@ -337,7 +337,7 @@ body.page {
 .hero-stat {
     padding: 10px 14px;
     border-radius: var(--radius-md);
-    background: rgba(18, 17, 26, 0.9);
+    background: rgba(14, 19, 33, 0.92);
     border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
@@ -359,15 +359,15 @@ body.page {
     border-radius: var(--radius-pill);
     padding: 6px 14px;
     font-size: 12px;
-    border: 1px solid #343341;
-    background: #181721;
+    border: 1px solid #233253;
+    background: #0f1728;
     color: var(--text-muted);
     cursor: pointer;
 }
 
 .chip--active {
     border-color: transparent;
-    background: rgba(107, 242, 114, 0.12);
+    background: rgba(158, 200, 255, 0.12);
     color: var(--accent);
 }
 
@@ -412,9 +412,9 @@ body.page {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     border-radius: var(--radius-pill);
-    background: rgba(5, 6, 8, 0.85);
+    background: rgba(3, 7, 20, 0.85);
     color: var(--accent);
-    border: 1px solid rgba(118, 242, 107, 0.5);
+    border: 1px solid rgba(158, 200, 255, 0.5);
 }
 
 .property-card__body {
@@ -508,7 +508,7 @@ body.page {
 /* Split section */
 
 .section--split {
-    background: radial-gradient(circle at top right, rgba(242, 179, 107, 0.1), transparent 55%);
+    background: radial-gradient(circle at 85% 10%, rgba(71, 128, 214, 0.15), transparent 55%);
 }
 
 .section--split__inner {
@@ -540,10 +540,10 @@ body.page {
 }
 
 .metric-card {
-    background: #181721;
+    background: #0f1728;
     border-radius: var(--radius-lg);
     padding: 18px 20px;
-    border: 1px solid rgba(242, 179, 107, 0.35);
+    border: 1px solid rgba(158, 200, 255, 0.28);
     margin-bottom: 16px;
 }
 
@@ -585,8 +585,8 @@ body.page {
 .callback-form textarea {
     flex: 1 1 180px;
     border-radius: 12px;
-    border: 1px solid #343341;
-    background: #181721;
+    border: 1px solid #233253;
+    background: #0f1728;
     color: var(--text-main);
     padding: 10px 12px;
     font-size: 13px;
@@ -617,7 +617,7 @@ body.page {
 .contacts__block {
     padding: 16px 18px;
     border-radius: var(--radius-lg);
-    background: #181721;
+    background: #0f1728;
     border: 1px solid var(--border-subtle);
     font-size: 13px;
 }
@@ -631,7 +631,7 @@ body.page {
     border-radius: var(--radius-lg);
     overflow: hidden;
     min-height: 180px;
-    background: #0E0D14;
+    background: #0a1226;
 }
 
 /* Footer */
@@ -639,7 +639,7 @@ body.page {
 .footer {
     border-top: 1px solid rgba(255, 255, 255, 0.04);
     padding: 18px 0 26px;
-    background: #050608;
+    background: #040814;
 }
 
 .footer__inner {
