@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>EPAS Development — Аренда и продажа недвижимости в Москве</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="main-dark.css">
+</head>
+<body class="page">
+
+<header class="header">
+    <div class="header__inner container">
+        <a href="/" class="header__logo">
+            <span class="header__logo-mark">EPAS</span>
+            <span class="header__logo-text">Development</span>
+        </a>
+
+        <nav class="header__nav">
+            <a href="#listing" class="header__link">Объекты</a>
+            <a href="#services" class="header__link">Услуги</a>
+            <a href="#about" class="header__link">О компании</a>
+            <a href="#contacts" class="header__link">Контакты</a>
+        </nav>
+
+        <div class="header__actions">
+            <a href="tel:+79990000000" class="header__phone">+7 (999) 000-00-00</a>
+            <a href="#callback" class="btn btn--ghost">Заявка</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__overlay"></div>
+
+        <div class="hero__content container">
+            <p class="hero__kicker">EPAS Development</p>
+            <h1 class="hero__title">
+                Аренда и продажа<br>
+                недвижимости в Москве
+            </h1>
+            <p class="hero__subtitle">
+                Подберём объект под ваш запрос — от стрит-ритейла до офисов класса А.
+            </p>
+
+            <form class="hero-search">
+                <div class="hero-search__field">
+                    <span class="hero-search__icon">🏙️</span>
+                    <input type="text"
+                           name="q"
+                           placeholder="Введите адрес, район или тип объекта">
+                </div>
+                <button type="submit" class="btn btn--primary">Найти объект</button>
+            </form>
+
+            <div class="hero__stats">
+                <div class="hero-stat">
+                    <span class="hero-stat__value">150+</span>
+                    <span class="hero-stat__label">актуальных объектов</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat__value">12 лет</span>
+                    <span class="hero-stat__label">на рынке коммерческой недвижимости</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat__value">48 ч</span>
+                    <span class="hero-stat__label">средний срок подбора</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЛЕНТА ОБЪЕКТОВ -->
+    <section id="listing" class="section section--tight">
+        <div class="container section__header">
+            <div>
+                <h2 class="section__title">Актуальные предложения</h2>
+                <p class="section__subtitle">
+                    Реальные объекты с проверенными владельцами. Уточняем наличие перед показом.
+                </p>
+            </div>
+
+            <div class="listing-filters">
+                <button class="chip chip--active">Все</button>
+                <button class="chip">Аренда</button>
+                <button class="chip">Продажа</button>
+                <button class="chip">Стрит-ритейл</button>
+                <button class="chip">Офисы</button>
+            </div>
+        </div>
+
+        <div class="container listing-grid">
+            <!-- Карточка объекта -->
+            <article class="property-card">
+                <div class="property-card__media">
+                    <span class="property-card__badge">Аренда</span>
+                    <img src="C:\Users\User\Desktop\s\74f43a9d-c594-45ee-93e1-9db23107c8bf.jpeg"
+                         alt="Фасад помещения на Заповедной улице">
+                </div>
+                <div class="property-card__body">
+                    <div class="property-card__row">
+                        <span class="property-card__price">₽400&nbsp;000 / мес</span>
+                        <span class="property-card__tag">Стрит-ритейл</span>
+                    </div>
+                    <p class="property-card__address">
+                        Москва, Заповедная ул., 16к1
+                    </p>
+
+                    <dl class="property-card__meta">
+                        <div>
+                            <dt>Площадь</dt>
+                            <dd>200 м²</dd>
+                        </div>
+                        <div>
+                            <dt>Этаж</dt>
+                            <dd>1 / 12</dd>
+                        </div>
+                        <div>
+                            <dt>Метро</dt>
+                            <dd>Бабушкинская — 5 мин пешком</dd>
+                        </div>
+                    </dl>
+
+                    <div class="property-card__footer">
+                        <button class="btn btn--secondary">Подробнее</button>
+                        <button class="btn-icon" title="Сохранить">
+                            ☆
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Повтори/замени карточки под свой цикл -->
+            <article class="property-card">
+                <div class="property-card__media">
+                    <span class="property-card__badge">Продажа</span>
+                    <img src="C:\Users\User\Desktop\s\650e1392-544a-455b-99ac-eaa4e1cdb575.png" alt="">
+                </div>
+                <div class="property-card__body">
+                    <div class="property-card__row">
+                        <span class="property-card__price">₽2&nbsp;232&nbsp;000</span>
+                        <span class="property-card__tag">Инвестиция</span>
+                    </div>
+                    <p class="property-card__address">
+                        Москва, 1-я Бухвостова ул., д. 10
+                    </p>
+
+                    <dl class="property-card__meta">
+                        <div>
+                            <dt>Площадь</dt>
+                            <dd>372 м²</dd>
+                        </div>
+                        <div>
+                            <dt>Статус</dt>
+                            <dd>Арендатор с 2020 года</dd>
+                        </div>
+                        <div>
+                            <dt>Доходность</dt>
+                            <dd>12,5% годовых</dd>
+                        </div>
+                    </dl>
+
+                    <div class="property-card__footer">
+                        <button class="btn btn--secondary">Подробнее</button>
+                        <button class="btn-icon" title="Сохранить">
+                            ☆
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ... -->
+        </div>
+
+        <div class="container section__cta">
+            <a href="#callback" class="btn btn--ghost">
+                Показать ещё объекты
+            </a>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section__title">Что мы делаем для клиентов</h2>
+            <p class="section__subtitle">
+                Полный цикл сопровождения сделки — от аналитики локации до подписания договора и выхода на плановую доходность.
+            </p>
+
+            <div class="cards-grid">
+                <article class="info-card">
+                    <h3 class="info-card__title">Подбор и аналитика</h3>
+                    <p class="info-card__text">
+                        Формируем короткий список объектов под вашу задачу: бизнес, инвестиции или редевелопмент.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3 class="info-card__title">Переговоры и юридическая проверка</h3>
+                    <p class="info-card__text">
+                        Проверяем собственника и историю объекта, согласуем условия сделки и аренды.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3 class="info-card__title">Стратегия доходности</h3>
+                    <p class="info-card__text">
+                        Считаем окупаемость, сценарии заселения и помогаем выйти на целевую доходность.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- О КОМПАНИИ -->
+    <section id="about" class="section section--split">
+        <div class="container section--split__inner">
+            <div class="section--split__text">
+                <h2 class="section__title">О компании EPAS Development</h2>
+                <p class="section__subtitle">
+                    Мы работаем с коммерческой недвижимостью в Москве и области, соединяя интересы собственников и бизнеса.
+                </p>
+                <ul class="list-check">
+                    <li>База объектов вне открытых площадок</li>
+                    <li>Работаем с юридическими лицами и частными инвесторами</li>
+                    <li>Отчётность и прозрачная комиссия</li>
+                </ul>
+            </div>
+            <div class="section--split__side">
+                <div class="metric-card">
+                    <span class="metric-card__value">80%</span>
+                    <span class="metric-card__label">сделок — по рекомендациям клиентов</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-card__value">3,5 года</span>
+                    <span class="metric-card__label">средний срок сотрудничества с инвесторами</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / КОНТАКТЫ -->
+    <section id="contacts" class="section section--inverse">
+        <div class="container contacts">
+            <div class="contacts__text">
+                <h2 class="section__title">Обсудим ваш объект или задачу?</h2>
+                <p class="section__subtitle">
+                    Оставьте телефон — менеджер свяжется с вами в течение рабочего дня.
+                </p>
+
+                <form id="callback" class="callback-form">
+                    <div class="callback-form__row">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <textarea name="comment" rows="3" placeholder="Кратко опишите запрос (аренда, покупка, бюджет, район)"></textarea>
+                    <button type="submit" class="btn btn--primary">Отправить заявку</button>
+                    <p class="callback-form__note">
+                        Нажимая на кнопку, вы соглашаетесь с обработкой персональных данных.
+                    </p>
+                </form>
+            </div>
+
+            <div class="contacts__side">
+                <div class="contacts__block">
+                    <h3>Контакты</h3>
+                    <p>Москва, ул. Примерная, д. 1</p>
+                    <p>Телефон: <a href="tel:+79990000000">+7 (999) 000-00-00</a></p>
+                    <p>E-mail: <a href="mailto:info@epas.agency">info@epas.agency</a></p>
+                </div>
+                <div class="contacts__map">
+                    <!-- сюда можно вставить iframe Яндекс карты -->
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <span>© EPAS Development, 2025</span>
+        <span>Агентство коммерческой недвижимости</span>
+    </div>
+</footer>
+
+</body>
+</html>
